@@ -8,12 +8,13 @@ class Solution {
             }
         }
         for(int x:candies){
-            if((x+extraCandies)>=max){
+            ans.add((x+extraCandies)>=max);
+            /*if((x+extraCandies)>=max){
                 ans.add(true);
             }
             else{
                 ans.add(false);
-            }
+            }*/
         }
         return ans;
     }
