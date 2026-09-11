@@ -3,9 +3,10 @@ class Solution {
         List<Boolean> ans=new ArrayList<>();
         int max=candies[0];
         for(int x:candies){
-            if(max<x){
+            max=Math.max(max,x);
+            /*if(max<x){
                 max=x;
-            }
+            }*/
         }
         for(int x:candies){
             ans.add((x+extraCandies)>=max);
