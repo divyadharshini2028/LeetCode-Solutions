@@ -3,7 +3,7 @@ class Solution {
 
         int l=prices.length;
         int[] ans=new int[l];
-        Deque<Integer> stack=new ArrayDeque<>();
+        Stack<Integer> stack=new Stack<>();
 
         for(int i=l-1;i>=0;i--){
            while(!stack.isEmpty() && prices[i]<stack.peek()){
