@@ -1,4 +1,4 @@
-/*class Solution {
+class Solution {
     public int[] productExceptSelf(int[] nums) {
         int n = nums.length;
         int[] left = new int[n];
@@ -20,9 +20,9 @@
         }
         return ans;
     }
-}*/
+}
 
-class Solution {
+/*class Solution {
     public int[] productExceptSelf(int[] nums) {
       int l=nums.length;
       int[] ans=new int[l];
@@ -37,4 +37,4 @@ class Solution {
        }
        return ans;
     }
-}//tc=o(n) sc=o(1)
+}//tc=o(n) sc=o(1)*/
