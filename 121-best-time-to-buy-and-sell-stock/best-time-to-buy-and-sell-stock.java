@@ -16,4 +16,4 @@ class Solution {
         }
         return  profit;      
     }
-}
+}//tc=o(n) sc=o(1);
