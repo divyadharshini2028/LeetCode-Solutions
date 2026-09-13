@@ -12,7 +12,7 @@
         }
         return count;
     }
-}*/
+}tc=o(n2)*/
 
 class Solution {
     public int numJewelsInStones(String jewels, String stones) {
@@ -21,9 +21,9 @@ class Solution {
         int l2=stones.length();
         int count=0;
         for(int i=0;i<l1;i++){
-            if(!set.contains(jewels.charAt(i))){
+            //if(!set.contains(jewels.charAt(i))){
                 set.add(jewels.charAt(i));
-            }
+            //}    no need because hashset itset add only unique
         }
         for(int j=0;j<l2;j++){
             if(set.contains(stones.charAt(j))){
@@ -32,4 +32,4 @@ class Solution {
         }
         return count;
     }
-}
+}//tc=o(n) sc=o(n);
