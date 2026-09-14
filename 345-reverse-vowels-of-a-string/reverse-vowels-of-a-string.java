@@ -10,18 +10,18 @@ class Solution {
         }
         int l1=ans.length();
         int j=0;
-        String res="";
+        StringBuilder res=new StringBuilder();
         for(int i=0;i<l;i++){
             char ch1=s.charAt(i);
             if(ch1=='a'||ch1=='e'||ch1=='i'||ch1=='o'||ch1=='u'||ch1=='A'||ch1=='E'||ch1=='I'||ch1=='O'||ch1=='U'){
                ch1=ans.charAt(l1-1-j);
                j++;
-               res=res+ch1;
+               res.append(ch1);
             }
             else{
-            res=res+ch1;
+            res.append(ch1);
             }
         }
-        return res;
+        return res.toString();
     }
 }
