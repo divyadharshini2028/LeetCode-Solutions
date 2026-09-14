@@ -1,11 +1,11 @@
 class Solution {
     public String reverseVowels(String s) {
         int l=s.length();
-        String ans="";
+        StringBuilder ans=new StringBuilder();
         for(int i=0;i<l;i++){
             char ch=s.charAt(i);
             if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'){
-                ans=ans+ch;
+                ans.append(ch);
             }
         }
         int l1=ans.length();
