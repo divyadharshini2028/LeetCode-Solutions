@@ -25,7 +25,7 @@
         return res.toString();
     }
 }*/
-class Solution {
+/*class Solution {
      public boolean isVowel(char ch) {
         return ch == 'a' || ch == 'e' || ch == 'i' ||
                ch == 'o' || ch == 'u' ||
@@ -56,5 +56,35 @@ class Solution {
             }
         }
         return res.toString();
+    }
+}//tc=o(n),sc=o(n);*/
+class Solution {
+     public boolean isVowel(char ch) {
+        return ch == 'a' || ch == 'e' || ch == 'i' ||
+               ch == 'o' || ch == 'u' ||
+               ch == 'A' || ch == 'E' || ch == 'I' ||
+               ch == 'O' || ch == 'U';
+    }
+    public String reverseVowels(String s) {
+        char[] ans=s.toCharArray();
+        int l=s.length();
+        int left=0;
+        int right=l-1;
+
+        while(left<right){
+            while(left<right && !isVowel(ans[left])){
+                left++;
+            }
+            while(left<right && !isVowel(ans[right])){
+                right--;
+            }
+            char temp=ans[left];
+            ans[left]=ans[right];
+            ans[right]=temp;
+
+            left++;
+            right--;
+        }
+        return new String(ans);
     }
 }
