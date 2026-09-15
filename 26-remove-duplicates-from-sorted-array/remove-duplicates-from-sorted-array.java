@@ -14,4 +14,4 @@ class Solution {
         return left+1;
         
     }
-}
+}//Time Complexity: O(n) — one loop ....Space Complexity: O(1) — no extra array
