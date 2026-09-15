@@ -20,4 +20,4 @@ class Solution {
         }
         return new int[] {-1,-1};//if no value is return ..ans is -1-1
     }
-}
+}//tc=o(n) sc=o(1)
