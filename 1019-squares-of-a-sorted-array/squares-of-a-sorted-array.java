@@ -10,7 +10,7 @@ class Solution {
         int left=0;
         int right=l-1;
         int[] ans=new int[l];
-        
+
         for(int i=l-1;i>=0;i--){
            int leftsq=nums[left]*nums[left];
            int rightsq=nums[right]*nums[right];
@@ -27,4 +27,4 @@ class Solution {
         }
         return ans;
     }
-}
+}//tc=o(n) sc=o(n);
