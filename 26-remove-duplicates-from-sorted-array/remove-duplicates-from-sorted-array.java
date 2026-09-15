@@ -5,10 +5,10 @@ class Solution {
         int left=0;
         //int right=1;
     
-        for(int i=1;i<l;i++){
-            if(n[i]!=n[left]){
+        for(int right=1;right<l;right++){
+            if(n[right]!=n[left]){
                 left++;
-                n[left]=n[i];
+                n[left]=n[right];
             }
         }
         return left+1;
