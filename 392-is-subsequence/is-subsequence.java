@@ -18,4 +18,4 @@ class Solution {
         
         return left==l1;
     }
-}
+}//Time: O(n) Space: O(1)
