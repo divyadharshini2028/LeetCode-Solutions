@@ -22,4 +22,4 @@ public class Solution {
         }
         return false;     
     }
-}
+}//TC: O(n)  SC: O(1)
