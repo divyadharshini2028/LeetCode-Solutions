@@ -29,4 +29,4 @@ class Solution {
 
         return head;
     }
-}
+}//TC: O(n) SC: O(1)
