@@ -18,7 +18,7 @@ class Solution {
             slow=slow.next;
             fast=fast.next.next;
         }
-        ListNode curr=slow;
+        ListNode curr=slow;//middle element
         ListNode prev=null;
         while(curr!=null){
             ListNode next=curr.next;
