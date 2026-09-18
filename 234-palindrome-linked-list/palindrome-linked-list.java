@@ -38,4 +38,4 @@ class Solution {
         }
         return true;      
     }
-}
+}//tc=o(n) sc=o(1)
