@@ -16,7 +16,7 @@ public class Solution {
         while(fast!=null && fast.next!=null){
             slow=slow.next;
             fast=fast.next.next;
-            if(slow==fast){
+            if(slow==fast){// as it is in cycle.it will give one of the element in cyle only ,not starting of the cycle
                 slow=head;
                 while(slow!=fast){
                     slow=slow.next;
@@ -28,4 +28,4 @@ public class Solution {
         return null;
         
     }
-}
+}//tc=o(n) sc=o(1)
