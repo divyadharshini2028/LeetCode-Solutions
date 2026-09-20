@@ -21,7 +21,8 @@ class Solution {
             fast=fast.next.next;
         }
 
-        ListNode curr=slow;
+        ListNode curr=slow.next;
+        slow.next=null;
         ListNode prev=null;
 
         while(curr!=null){
@@ -33,7 +34,7 @@ class Solution {
         ListNode first=head;
         ListNode second=prev;
 
-        while(second.next!=null){
+        while(second!=null){
             ListNode temp1=first.next;
             ListNode temp2=second.next;
             first.next=second;
