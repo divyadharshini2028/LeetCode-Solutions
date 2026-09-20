@@ -20,7 +20,7 @@ class Solution {
             slow=slow.next;
             fast=fast.next.next;
         }
-
+        //ListNode curr=slow; use this instead of next two line but this increase tc sc
         ListNode curr=slow.next;
         slow.next=null;
         ListNode prev=null;
@@ -34,7 +34,7 @@ class Solution {
         ListNode first=head;
         ListNode second=prev;
 
-        while(second!=null){
+        while(second!=null){//second.next!=null   use this when above that is used
             ListNode temp1=first.next;
             ListNode temp2=second.next;
             first.next=second;
