@@ -21,4 +21,4 @@ class Solution {
         }
         return false;
     }
-}
+}//TC: O(log(r × c)), SC: O(1)
