@@ -14,7 +14,7 @@ class Solution {
             }
             else if(nums[left]<=nums[mid]){
                 if(nums[left]<=target && target<nums[mid]){
-                  right=mid-1;
+                    right=mid-1;
                 }
                 else{
                     left=mid+1;
@@ -31,4 +31,4 @@ class Solution {
         }
         return false;
     }
-}
+}//TC: O(log n) average, O(n) worst case; SC: O(1)
