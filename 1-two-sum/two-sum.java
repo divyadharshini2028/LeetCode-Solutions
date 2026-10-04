@@ -14,25 +14,6 @@ class Solution {
         return a;
         */
         int l=nums.length;
-        HashMap<Integer,Integer> map=new HashMap<>();
-
-        int[] a=new int[2];
-        for(int i=0;i<l;i++){
-            int curr=nums[i];
-            int need=target-curr;;
-            if(map.containsKey(need)){
-                a[0]=i;
-                a[1]=map.get(need);
-                break;
-            }
-            map.put(curr,i);
-        }
-        return a;
-    }
-}
-
-/*
-        int l=nums.length;
         int [] ans=new int[2];
 
         HashMap<Integer,Integer> mp= new HashMap<>();
@@ -49,4 +30,4 @@ class Solution {
         }
         return ans;
     }
-}*/
+}
