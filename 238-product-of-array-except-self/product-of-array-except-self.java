@@ -22,41 +22,20 @@
         return ans;
     }
 }*/
-/*
+
 class Solution {
     public int[] productExceptSelf(int[] nums) {
       int l=nums.length;
       int[] ans=new int[l];
       ans[0]=1;
        for(int i=1;i<l;i++){
-        ans[i]=ans[i-1]*nums[i-1];
+        ans[i]=ans[i-1]*nums[i-1];   //left product
        }
        int right=1;
        for(int i=l-1;i>=0;i--){
-        ans[i]=ans[i]*right;
-        right=right*nums[i];
+        ans[i]=ans[i]*right;   //left*right product
+        right=right*nums[i];   //right product;
        }
        return ans;
     }
-}//tc=o(n) sc=o(1)*/
-
-
-
-class Solution {
-    public int[] productExceptSelf(int[] nums) {
-        int l=nums.length;
-        int[] a=new int[l];
-        a[0]=1;
-
-        for(int i=1;i<l;i++){
-            a[i]=a[i-1]*nums[i-1];
-        }
-        int right=1;
-        for(int i=l-1;i>=0;i--){
-            a[i]=a[i]*right;
-            right=nums[i]*right;
-        }
-        return a;
-    }
-}
-
+}//TC: O(n), SC: O(1) auxiliary space
