@@ -22,7 +22,7 @@
         return ans;
     }
 }*/
-
+/*
 class Solution {
     public int[] productExceptSelf(int[] nums) {
       int l=nums.length;
@@ -38,5 +38,25 @@ class Solution {
        }
        return ans;
     }
-}//tc=o(n) sc=o(1)
+}//tc=o(n) sc=o(1)*/
+
+
+
+class Solution {
+    public int[] productExceptSelf(int[] nums) {
+        int l=nums.length;
+        int[] a=new int[l];
+        a[0]=1;
+
+        for(int i=1;i<l;i++){
+            a[i]=a[i-1]*nums[i-1];
+        }
+        int right=1;
+        for(int i=l-1;i>=0;i--){
+            a[i]=a[i]*right;
+            right=nums[i]*right;
+        }
+        return a;
+    }
+}
 
